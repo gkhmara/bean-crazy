@@ -2,7 +2,9 @@ import React from "react";
 
 function Header() {
   return (
-    <h1>Bean Crazy: Coffee House</h1>
+    <React.Fragment>
+      <h1>Bean Crazy: Coffee House</h1>
+    </React.Fragment>
   );
 }
 
