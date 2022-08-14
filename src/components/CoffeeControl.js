@@ -7,7 +7,8 @@ class CoffeeControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      mainCoffeeList: []
     };
   }
 
@@ -24,7 +25,7 @@ class CoffeeControl extends React.Component {
       currentlyVisibleSate = <NewCoffeeForm />;
       buttonText = "Return to Coffee List";
     } else {
-      currentlyVisibleSate = <CoffeeList />
+      currentlyVisibleSate = <CoffeeList coffeeList={this.state.mainCoffeeList} />
       buttonText = "Add Coffee";
     }
     return (
