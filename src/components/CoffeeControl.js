@@ -12,7 +12,7 @@ class CoffeeControl extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(prevState =>({
+    this.setState(prevState => ({
       formVisibleOnPage: !prevState.formVisibleOnPage
     }));
   }
