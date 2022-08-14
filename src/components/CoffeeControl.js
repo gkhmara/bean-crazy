@@ -13,14 +13,17 @@ class CoffeeControl extends React.Component {
 
   render(){
     let currentlyVisibleSate = null;
+    let addCoffeeButton = null;
     if (this.state.formVisibleOnPage) {
       currentlyVisibleSate = <NewCoffeeForm />
     } else {
       currentlyVisibleSate = <CoffeeList />
+      addCoffeeButton = <button onClick={this.handleClick}>Add Coffee</button>
     }
     return (
       <React.Fragment>
         {currentlyVisibleSate}
+        {addCoffeeButton}
       </React.Fragment>
     );
   }
