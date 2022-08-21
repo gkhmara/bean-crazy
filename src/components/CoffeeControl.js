@@ -58,7 +58,7 @@ class CoffeeControl extends React.Component {
 
   handleEditingCoffeeInList = (coffeeToEdit) => {
     const editedMainCoffeeList = this.state.mainCoffeeList
-      .filter(coffee => coffee.id != this.state.selectedCoffee.id)
+      .filter(coffee => coffee.id !== this.state.selectedCoffee.id)
       .concat(coffeeToEdit);
     this.setState({
       mainCoffeeList: editedMainCoffeeList,
