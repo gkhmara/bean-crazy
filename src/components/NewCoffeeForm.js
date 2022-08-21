@@ -9,9 +9,9 @@ function NewCoffeeForm(props) {
     event.preventDefault();
     props.onNewCoffeeCreation({
       name: event.target.name.value,
-      origin: event.target.location.value,
-      price: event.target.location.value,
-      roast: event.target.location.value,
+      origin: event.target.origin.value,
+      price: event.target.price.value,
+      roast: event.target.roast.value,
       id: v4()
     });
   }
@@ -20,7 +20,7 @@ function NewCoffeeForm(props) {
     <React.Fragment>
       <ReusableForm
       formSubmissionHandler={handleNewCoffeeFormSubmission}
-      buttonText="Help!" />
+      buttonText="Add Order" />
     </React.Fragment>
   );
 }
