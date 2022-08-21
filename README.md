@@ -21,7 +21,7 @@ This site allows a user to create and edit a coffee order. They can also edit th
 
 * Clone the repo from Github
 * Navagate to root project folder *bean-crazy* within the terminal or console
-* Type to terminal or console:<br>*npm install<br>*npm start*
+* Type to terminal or console:<br>*npm install<br>*npm start<br>
 * Site will automatically open in browser
 
 ## Known Bugs
